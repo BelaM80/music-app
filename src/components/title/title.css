@@ -1,0 +1,14 @@
+.avatar {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.title {
+  color: #fff;
+}
+
+.title > h1 {
+  text-align: center;
+  margin: 4px;
+}
