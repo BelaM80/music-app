@@ -1,0 +1,23 @@
+.btn {
+  border-radius: 20px;
+  color: white;
+  background: none;
+  border: none;
+  padding: 9px 30px;
+  align-items: center;
+  font-size: 0.6rem;
+  margin: 10px;
+  text-align: left;
+  letter-spacing: 0.16px;
+  justify-content: center;
+  display: flex;
+  border: 1px solid #fff;
+}
+
+.btn > :first-child {
+  margin-right: 15px;
+}
+.btn-primary {
+  background-image: linear-gradient(#ed8770, #d9519d);
+  border: none;
+}
