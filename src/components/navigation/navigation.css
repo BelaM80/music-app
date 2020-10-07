@@ -1,0 +1,23 @@
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  margin: 0 0 10px 10px;
+  border-bottom: 1px solid #707070;
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: -10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-box {
+  background-color: #10121d;
+  width: 313px;
+}
+
+.icon {
+  margin-right: 5px;
+}
