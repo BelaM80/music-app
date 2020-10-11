@@ -1,0 +1,6 @@
+.box {
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  place-items: center;
+  height: 100vh;
+}
