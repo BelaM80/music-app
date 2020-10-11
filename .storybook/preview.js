@@ -9,4 +9,5 @@ addParameters({
     config: {},
     options: {},
   },
+  layout: "fullscreen",
 });

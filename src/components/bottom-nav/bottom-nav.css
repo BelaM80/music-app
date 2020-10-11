@@ -5,8 +5,9 @@
   color: grey;
   font-size: 0.8rem;
   width: 100vw;
-  box-shadow: -5px -5px 10px black;
+  box-shadow: 0 -3px 5px black;
   padding: 1% 0;
+  height: 70px;
 }
 
 .icon {
