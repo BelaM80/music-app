@@ -14,7 +14,7 @@
 }
 
 .menu-box {
-  background-color: #10121d;
+  background-color: var(--primary-color);
   width: 313px;
 }
 

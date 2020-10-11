@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #181b2c;
+  --secondary-color: #181b2c;
+}
 *,
 *::after,
 *::before {
@@ -6,7 +10,7 @@
 
 html {
   font-size: 16px;
-  background-color: #383b49;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
