@@ -1,0 +1,27 @@
+.track {
+  display: grid;
+  grid-template-columns: 50px 1fr 40px;
+  text-align: left;
+  width: 375px;
+}
+button {
+  width: fit-content;
+  border-style: none;
+  background-color: var(--primary-color);
+  margin-right: 10px;
+}
+.track__content {
+  padding-left: 10px;
+}
+
+.track__content > h3 {
+  margin: 0 0 3px 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.651);
+}
+
+.track__content > p {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.356);
+  margin: 5px 0;
+}
