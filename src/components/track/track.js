@@ -12,38 +12,59 @@
 
 */
 import "./track.css";
-import michaelImage from "../../assets/michael.png";
 import playActionScr from "../../assets/play-active.svg";
+import pausePlayScr from "../../assets/pause.svg";
 
-export function createTrackElement(title, artist) {
-  const trackElement = document.createElement("div"); // <div></div>
-  //divElement.innerText = "Billie Jean";
+export function createTrackElement(track) {
+  const trackElement = document.createElement("div");
   trackElement.className = "track";
 
-  const content = document.createElement("div");
-  content.className = "track__content";
+  const textContent = document.createElement("div");
+  textContent.className = "track__content";
 
   const titleElement = document.createElement("h3");
-  titleElement.innerText = title;
+  titleElement.innerText = track.title;
 
   const artistElement = document.createElement("p");
-  artistElement.innerText = artist;
+  artistElement.innerText = track.artist;
+
+  textContent.append(titleElement, artistElement);
 
   const imgElement = document.createElement("img");
-  imgElement.src = michaelImage;
-  imgElement.alt = `Image of ${artist}`;
+  imgElement.src = track.imgSrc;
+  imgElement.alt = `Image of ${track.artist}`;
   imgElement.className = "track__image";
 
   const buttonElement = document.createElement("button");
+  buttonElement.className = "track__button";
+
   const playActionElement = document.createElement("img");
   playActionElement.src = playActionScr;
 
+  trackElement.append(imgElement, textContent, buttonElement);
+  buttonElement.append(playActionElement);
+
+  const audioElement = new Audio(track.audioSrc);
+
   buttonElement.onclick = function () {
-    alert("click");
+    if (!audioElement.paused) {
+      audioElement.pause();
+      setPlayIcon(playActionElement);
+    } else {
+      audioElement.play();
+      setPauseIcon(playActionElement);
+    }
   };
 
-  content.append(titleElement, artistElement);
-  trackElement.append(imgElement, content, buttonElement);
-  buttonElement.append(playActionElement);
   return trackElement;
 }
+
+const setPlayIcon = (element) => {
+  element.src = playActionScr;
+  element.alt = "Play Button";
+};
+
+const setPauseIcon = (element) => {
+  element.src = pausePlayScr;
+  element.alt = "Pause Button";
+};
