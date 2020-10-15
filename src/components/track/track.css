@@ -25,3 +25,7 @@ button {
   color: rgba(255, 255, 255, 0.356);
   margin: 5px 0;
 }
+.track__image {
+  height: 46px;
+  border-radius: 50px;
+}
