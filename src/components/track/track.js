@@ -31,7 +31,7 @@ export const createTrackElement = (track) => {
         alt: `Image of ${track.artist}`,
       }),
       createElement("div", {
-        className: "track__description",
+        className: "track__content",
         children: [
           createElement("h3", {
             innerText: track.title,
