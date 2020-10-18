@@ -4,7 +4,7 @@
   text-align: left;
   width: 375px;
 }
-button {
+.track__button {
   width: fit-content;
   border-style: none;
   background-color: var(--primary-color);
