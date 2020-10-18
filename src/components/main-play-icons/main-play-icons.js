@@ -18,14 +18,38 @@ import mainButtonForwardSrc from "../../assets/fastforward.svg";
 </div>
  */
 
-export const createButtonElement = (mainButton) => {
+export const createButtonElement = () => {
+  const rewindElement = createElement("img", {
+    src: mainButtonRewindSrc,
+    alt: "rewind",
+  });
+
+  const playElement = createElement("img", {
+    src: mainButtonPlaySrc,
+    alt: `Play`,
+  });
+
+  const forwardElement = createElement("img", {
+    src: mainButtonForwardSrc,
+    alt: "forward",
+  });
+
   const buttonElement = createElement("div", {
     className: "main-btns",
     children: [
-      createElement("img", {
+      createElement("button", {
+        className: "main-btns__rewind",
+        children: [rewindElement],
+      }),
+
+      createElement("button", {
         className: "main-btns__play",
-        src: mainButtonPlaySrc,
-        alt: `Play`,
+        children: [playElement],
+      }),
+
+      createElement("button", {
+        className: "main-btns__forward",
+        children: [forwardElement],
       }),
     ],
   });

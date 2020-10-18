@@ -1,0 +1,15 @@
+.main-btns {
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+}
+
+.main-btns__play > img {
+  width: 40px;
+  height: 40px;
+}
+
+.main-btns > button {
+  background: none;
+  border: none;
+}
